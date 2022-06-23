@@ -18,6 +18,10 @@ def result(res):
 @app.get("/")
 async def main():
     return 'Hello World'
+    
+@app.get("/echo")
+async def echo(text):
+    return 'Hello World ' +text    
 
 @app.get("/test")
 async def test():
